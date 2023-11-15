@@ -1,0 +1,4 @@
+#include(keybinds/desktop.template)
+#include(keybinds/applications.template)
+#include(keybinds/scratchpad.template)
+#include(keybinds/media.template)

@@ -1,0 +1,11 @@
+bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_down
+
+# bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
+# bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute
+
+# touchpad on and off controller on laptop with Fn+<touchpad control functional key>
+# bindsym XF86TouchpadOn exec --no-sartup-id synclient Touchpadoff=0
+# bindsym XF86TouchpadOff exec --no-startup-id synclient Touchpadoff=1
+

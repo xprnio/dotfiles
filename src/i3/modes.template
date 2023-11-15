@@ -1,0 +1,3 @@
+#include(modes/system.template)
+#include(modes/resize.template)
+#include(modes/gaps.template)

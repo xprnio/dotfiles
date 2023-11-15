@@ -1,0 +1,26 @@
+set $mod Mod4
+floating_modifier $mod
+hide_edge_borders none
+
+font xft:URWGothic-Book 10
+new_window pixel 1
+new_float normal
+
+# Gaps
+gaps inner 10
+gaps outer -4
+smart_gaps on
+
+# Theme colors
+client.focused          #b0c4bb #2f2f38 #b0c4bb #1AB8D8 #1AB8D8
+client.focused_inactive #b0c4bb #2f2f38 #b0c4bb #16658A #16658A
+client.unfocused        #b0c4bb #2f2f38 #b0c4bb #16658A #16658A
+client.urgent           #b0c4bb #2f2f38 #b0c4bb #16658A #16658A
+client.placeholder      #b0c4bb #2f2f38 #b0c4bb #16658A #16658A
+client.background       #2f2f38
+
+#include(modes.template)
+#include(windows.template)
+#include(keybinds.template)
+#include(autostart.template)
+#include(workspaces.template)

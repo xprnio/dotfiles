@@ -1,0 +1,4 @@
+bindsym Print exec "flameshot gui"
+
+# open terminal
+bindsym $mod+Return exec alacritty

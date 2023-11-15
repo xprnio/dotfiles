@@ -1,0 +1,14 @@
+# autostart applications
+exec --no-startup-id nitrogen --restore
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id pamac-tray
+exec --no-startup-id clipit
+exec --no-startup-id picom --config  ~/.config/picom/picom.conf
+
+# autostart polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
+# configure multiple keyboard layouts and hotkey to switch
+exec_always --no-startup-id setxkbmap -layout 'us,ee' -option 'grp:win_space_toggle'
+

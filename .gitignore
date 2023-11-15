@@ -1,0 +1,4 @@
+utils/bin/*
+
+config/i3/*
+config/polybar/*

@@ -1,0 +1,16 @@
+[global/wm]
+margin-left = 6
+margin-right = 6
+margin-top = 6
+margin-bottom = 6
+
+[settings]
+screenchange-reload = true
+
+#include(bars/main-bar.template)
+#include(modules/i3.template)
+#include(modules/wlan.template)
+#include(modules/eth.template)
+#include(modules/date.template)
+#include(modules/pulseaudio.template)
+#include(modules/powermenu.template)

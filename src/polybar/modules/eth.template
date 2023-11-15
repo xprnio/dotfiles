@@ -1,0 +1,35 @@
+[module/eth]
+type = internal/network
+interface = enp10s0
+interval = 3.0
+
+; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
+; Minimum output width of upload/download rate
+; Default: 3
+; udspeed-minwidth = 3
+
+; Accumulate values from all interfaces
+; when querying for up/downspeed rate
+; Default: false
+accumulate-stats = true
+
+; Consider an `UNKNOWN` interface state as up.
+; Some devices like USB network adapters have 
+; an unknown state, even when they're running
+; Default: false
+unknown-as-up = false
+
+; The unit used for displaying network speeds
+; For example if set to the empty string, a speed of 5 KB/s is displayed as 5 K
+; Default: B/s
+; New in version 3.6.0
+speed-unit = B/s
+
+format-connected-padding = 2
+format-connected-foreground = #2f2f38
+format-connected-background = #1AB8D8
+format-connected-prefix = " "
+format-connected-prefix-foreground = #2f2f38
+label-connected = "UP: %upspeed:min% - DOWN: %downspeed:min%"
+
+format-disconnected =

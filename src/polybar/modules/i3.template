@@ -1,0 +1,29 @@
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+label-mode-padding = 2
+label-mode-margin = 2
+label-mode-foreground = #b0c4bb
+label-mode-background = #2f2f38
+
+label-focused = %index%
+label-focused-background = #1AB8D8
+label-focused-foreground = #2f2f38
+label-focused-padding = 2
+
+label-unfocused = %index%
+label-unfocused-background = #16658A
+label-unfocused-foreground = #2f2f38
+label-unfocused-padding = 2
+
+label-visible = %index%
+label-visible-background = #1AB8D8
+label-visible-foreground = #2f2f38
+label-visible-padding = 2
+
+label-urgent = %index%
+label-urgent-background = #BA2922
+label-urgent-padding = 2

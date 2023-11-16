@@ -32,9 +32,11 @@ For the time being, we can assume the following dependencies:
 - `polybar` - [A fast and easy to use tool for creating status bars](https://polybar.github.io/)
 - `go` - [The Go programming language](https://go.dev/)
 - `make` - [GNU Make](https://www.gnu.org/software/make/)
+- `scrot`
+- `imagemagick`
 
 ```bash
-sudo pacman -S --needed make i3-wm polybar go
+sudo pacman -S --needed make i3-wm i3lock polybar go scrot imagemagick
 ```
 
 ### Installing

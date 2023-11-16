@@ -1,9 +1,16 @@
 [module/pulseaudio]
 type = internal/pulseaudio
+
+label-muted = 󰝟 muted
+label-muted-foreground = #ff6666
+format-muted = <label-muted>
+
+label-volume = 󰕾 %percentage%%
 format-volume = <label-volume>
-format-spacing = 1
+
+format-spacing = 2
 format-padding = 2
-format-volume-spacing = 1
+format-volume-spacing = 2
 format-volume-padding = 2
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)

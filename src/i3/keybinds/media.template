@@ -1,6 +1,6 @@
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_up
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/volume_brightness.sh volume_down
+bindsym XF86AudioMute exec --no-startup-id amixer -q -D pulse set Master toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/i3/scripts/i3-volume.sh up
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/i3/scripts/i3-volume.sh down
 
 # bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -c 0 -q set Master 2dB+ unmute
 # bindsym XF86AudioLowerVolume exec --no-startup-id amixer -c 0 -q set Master 2db- unmute

@@ -6,7 +6,7 @@ OUT_DIR := $(DOTFILES)/config/i3
 
 CONFIG_DIR := $(HOME)/.config/i3
 SCRIPTS_DIR := $(DOTFILES)/scripts
-SCRIPTS := i3-exit.sh
+SCRIPTS := i3-exit.sh i3-volume.sh
 
 GO_TPL := $(DOTFILES)/utils/bin/go-tpl
 

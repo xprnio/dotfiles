@@ -10,6 +10,7 @@ clean:
 	rm -f $(CURDIR)/bin/go-tpl
 
 build: $(MAKE_DIRS)
+	mkdir -p "$(CURDIR)/bin"
 	ln -fs $(CURDIR)/go-tpl/bin/go-tpl $(CURDIR)/bin/go-tpl
 
 $(MAKE_DIRS):

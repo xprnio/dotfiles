@@ -13,7 +13,7 @@ all: clean test build
 
 clean:
 	$(GOCLEAN) -testcache
-	rm -rf "$(BUILD_DIR)/$(BINARY_NAME)"
+	rm -rf "$(BUILD_DIR)"
 
 test: clean
 	$(GOTEST) -v ./...
@@ -25,5 +25,6 @@ cover: coverage.out
 	$(GOTOOL) cover -html=coverage.out
 
 build: clean
+	mkdir -p "$(BUILD_DIR)"
 	$(GOBUILD) -o "$(BUILD_DIR)/$(BINARY_NAME)" $(SOURCE)
 

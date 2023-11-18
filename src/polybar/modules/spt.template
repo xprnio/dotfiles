@@ -6,3 +6,5 @@ interval-fail = 15
 
 label = "%output%"
 label-fail = "%output%"
+
+click-left = spt playback --toggle

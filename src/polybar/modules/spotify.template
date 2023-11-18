@@ -1,0 +1,10 @@
+[module/spotify]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/polybar-spotify.sh
+interval = 0.1
+
+label = "%output%"
+label-fail = "%output%"
+format-background = #2f2f38
+
+click-left = playerctl play-pause

@@ -6,7 +6,7 @@ screenchange-reload = true
 
 # Custom modules
 #include(modules/powermenu.template)
-#include(modules/spt.template)
+#include(modules/spotify.template)
 
 # Internal modules
 #include(modules/i3.template)

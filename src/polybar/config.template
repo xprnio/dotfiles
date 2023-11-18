@@ -8,6 +8,7 @@ margin-bottom = 6
 screenchange-reload = true
 
 #include(bars/main-bar.template)
+#include(bars/status-bar.template)
 
 #include(modules/spt.template)
 

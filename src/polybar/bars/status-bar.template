@@ -1,0 +1,38 @@
+[bar/status]
+bottom = true
+width = 100%
+height = 32
+radius = 0
+fixed-center = true
+
+background = #2f2f38
+foreground = #b0c4bb
+
+line-size = 3
+line-color = #ffffff
+
+border-size = 0
+border-size-top = 0
+border-color = #00000000
+
+padding-left = 0
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+modules-left = spt
+modules-center = 
+modules-right = 
+
+font-0 = "MonaspaceXenon-Regular:size=10;1"
+font-1 = "MononokiNerdFontMono-Regular:style=Regular:size=20;4"
+font-2 = "MononokiNerdFontMono-Regular:style=Regular:size=12;1"
+
+tray-position =
+;tray-padding =
+wm-restack = i3
+override-redirect = false
+
+cursor-click = pointer
+cursor-scroll = ns-resize

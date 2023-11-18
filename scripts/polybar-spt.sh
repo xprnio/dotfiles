@@ -19,15 +19,17 @@ if [[ "$code" == "0" ]]; then
   after_title="$padding%{F-}"
 
   title="$before_title Spotify $after_title"
-  content="$before%{F$fg}%{T3}$icon%{T-}$label%{F-}$after"
 
   case "$icon" in
-    "󰐊") status="playing"
+    "󰐊")
+      icon=""
     ;;
-    "") status="paused"
+    "")
+      icon="󰐊"
     ;;
   esac
 
+  content="$before%{F$fg}%{T3}$icon%{T-}$label%{F-}$after"
   echo "$title$content"
 else
   fg="#$background"

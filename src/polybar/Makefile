@@ -6,7 +6,7 @@ OUT_DIR := $(DOTFILES)/config/polybar
 
 CONFIG_DIR := $(HOME)/.config/polybar
 SCRIPTS_DIR := $(DOTFILES)/scripts
-SCRIPTS := launch_polybar.sh
+SCRIPTS := launch_polybar.sh polybar-spt.sh
 
 GO_TPL := $(DOTFILES)/utils/bin/go-tpl
 

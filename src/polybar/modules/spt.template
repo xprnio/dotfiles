@@ -1,0 +1,8 @@
+[module/spt]
+type = custom/script
+exec = $HOME/.config/polybar/scripts/polybar-spt.sh
+interval = 1
+interval-fail = 15
+
+label = "%output%"
+label-fail = "%output%"

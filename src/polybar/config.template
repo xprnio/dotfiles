@@ -8,6 +8,9 @@ margin-bottom = 6
 screenchange-reload = true
 
 #include(bars/main-bar.template)
+
+#include(modules/spt.template)
+
 #include(modules/i3.template)
 #include(modules/wlan.template)
 #include(modules/eth.template)

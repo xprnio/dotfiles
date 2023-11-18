@@ -46,10 +46,11 @@ make install
 ```
 
 ### Modules
-- `spotify`
-In order for the spotify module to work, make sure you have `spotifyd` and `playerctl` installed and configured.
+#### `modules/spotify`
 
+In order for the spotify module to work, make sure you have `spotifyd` and `playerctl` installed and configured.
 Additionally, add the following options to `~/.config/spotifyd/spotifyd.conf`.
+
 ```
 on_song_change_hook = "sh ~/.dotfiles/scripts/spotifyd-event-hook.sh"
 use_mpris = true

@@ -13,8 +13,8 @@ if [[ "$code" == "0" ]]; then
 
   padding="  "
 
-  before_title="%{F$bg}$padding"
-  after_title="$padding%{F-}"
+  before_title="%{F$bg}%{T5}$padding"
+  after_title="$padding%{T-}%{F-}"
   case "$icon" in
     "󰐊")
       # icon=""
@@ -22,8 +22,8 @@ if [[ "$code" == "0" ]]; then
     ;;
     "")
       # icon="󰐊"
-      icon="PAUSED$padding"
-      bg="#1EA345"
+      icon=""
+      bg="#116E3C"
     ;;
   esac
 
@@ -31,7 +31,7 @@ if [[ "$code" == "0" ]]; then
   after="$padding%{F-}%{B-}"
 
   title="$before_title Spotify $after_title"
-  content="$before%{F$fg}%{T4}$icon%{T-}$label%{F-}$after"
+  content="$before%{F$fg}%{T4}$icon%{T-}%{T6}$label%{T-}%{F-}$after"
   echo "$title$content"
 else
   fg="#$background"
@@ -40,7 +40,7 @@ else
   before="%{B$bg}%{F$fg}$padding"
   after="$padding%{F-}%{B-}"
 
-  title="%{F$fg} Spotify not playing %{F-}"
+  title="%{T5} Spotify not playing %{T-}"
   echo "${before}$title${after}"
 fi
 

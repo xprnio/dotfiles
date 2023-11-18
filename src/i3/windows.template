@@ -1,4 +1,5 @@
 # Open specific applications in floating mode
+for_window [class="(?i)virt-manager"] floating enable
 for_window [class="Galculator"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal
 for_window [class="Lxappearance"] floating enable sticky normal

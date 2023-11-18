@@ -6,30 +6,32 @@ code="$?"
 
 if [[ "$code" == "0" ]]; then
   icon="${result:0:1}"
-  label="${result:1}"
+  label="${result:2}"
 
   fg="#$foreground"
   bg="#$background"
 
   padding="  "
 
-  before="%{B$bg}%{F$fg}$padding"
-  after="$padding%{F-}%{B-}"
   before_title="%{F$bg}$padding"
   after_title="$padding%{F-}"
-
-  title="$before_title Spotify $after_title"
-
   case "$icon" in
     "󰐊")
-      icon=""
+      # icon=""
+      icon=""
     ;;
     "")
-      icon="󰐊"
+      # icon="󰐊"
+      icon="PAUSED$padding"
+      bg="#1EA345"
     ;;
   esac
 
-  content="$before%{F$fg}%{T3}$icon%{T-}$label%{F-}$after"
+  before="%{B$bg}%{F$fg}$padding"
+  after="$padding%{F-}%{B-}"
+
+  title="$before_title Spotify $after_title"
+  content="$before%{F$fg}%{T4}$icon%{T-}$label%{F-}$after"
   echo "$title$content"
 else
   fg="#$background"

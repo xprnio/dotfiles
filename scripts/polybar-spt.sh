@@ -3,20 +3,23 @@ foreground="111111"
 
 result="$(spt playback --status -f '%s %a - %t' 2>/dev/null)"
 code="$?"
+
 if [[ "$code" == "0" ]]; then
   icon="${result:0:1}"
   label="${result:1}"
 
   fg="#$foreground"
   bg="#$background"
-  fg_muted="#66000000"
 
   padding="  "
+
   before="%{B$bg}%{F$fg}$padding"
   after="$padding%{F-}%{B-}"
+  before_title="%{F$bg}$padding"
+  after_title="$padding%{F-}"
 
-  title="%{F$fg_muted}Spotify %{F-}"
-  content="%{F$fg}%{T3}$icon%{T-}$label%{F-}"
+  title="$before_title Spotify $after_title"
+  content="$before%{F$fg}%{T3}$icon%{T-}$label%{F-}$after"
 
   case "$icon" in
     "󰐊") status="playing"
@@ -25,7 +28,7 @@ if [[ "$code" == "0" ]]; then
     ;;
   esac
 
-  echo "${before}$title $content${after}"
+  echo "$title$content"
 else
   fg="#$background"
 
@@ -33,7 +36,8 @@ else
   before="%{B$bg}%{F$fg}$padding"
   after="$padding%{F-}%{B-}"
 
-  title="%{F$fg}Spotify not playing%{F-}"
+  title="%{F$fg} Spotify not playing %{F-}"
   echo "${before}$title${after}"
-  exit 1
 fi
+
+exit $code

@@ -10,6 +10,7 @@ screenchange-reload = true
 
 # Internal modules
 #include(modules/i3.template)
+#include(modules/mpd.template)
 #include(modules/wlan.template)
 #include(modules/eth.template)
 #include(modules/date.template)

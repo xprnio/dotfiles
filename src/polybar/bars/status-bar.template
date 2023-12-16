@@ -28,9 +28,9 @@ font-3 = "MonaspaceXenon-Regular:size=8;2"
 font-4 = "MonaspaceArgon-Regular:size=12;2"
 font-5 = "MonaspaceRadon-Regular:size=12;2"
 
-modules-left = spotify
+modules-left = 
 modules-center = 
-modules-right = 
+modules-right = mpd
 
 tray-position =
 ;tray-padding =

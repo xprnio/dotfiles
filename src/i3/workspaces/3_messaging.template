@@ -1,0 +1,7 @@
+# telegram
+for_window [class="(?i)telegram"] move to workspace 3
+for_window [class="(?i)telegram"] focus
+
+# discord
+for_window [class="(?i)discord"] move to workspace 3
+for_window [class="(?i)discord"] focus

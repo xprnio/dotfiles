@@ -1,0 +1,3 @@
+# alacritty
+for_window [class="(?i)alacritty"] move to workspace 1
+for_window [class="(?i)alacritty"] focus
